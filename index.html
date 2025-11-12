@@ -6,25 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>春子の起始页</title>
     <link rel="icon" href="favicon.ico">
-    <script>
-document.addEventListener('contextmenu', function(event) {
-event.preventDefault();
-    $("#menu").addClass('on');
-
-    openBox();
-
-    //更改设置图标
-    $("#icon-menu").attr("class", "iconfont icon-home");
-
-    //隐藏书签打开设置
-    $(".mark").css({
-        "display": "none",
-    });
-    $(".set").css({
-        "display": "flex",
-    });
-});
-</script>
     <!-- jQuery -->
     <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/jquery/3.6.0/jquery.min.js"></script>
     <!-- 引入样式 -->
@@ -34,9 +15,9 @@ event.preventDefault();
     <link rel="stylesheet" type="text/css" href="./css/mobile.css">
     <link rel="stylesheet" type="text/css" href="./css/animation.css">
     <!-- Izitoast -->
-    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/css/iziToast.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
     <script type="text/javascript"
-        src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/js/iziToast.min.js">
+        src="https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js">
     </script>
     <!-- IE Out -->
     <script>
@@ -574,6 +555,18 @@ event.preventDefault();
     <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/set.js"></script>
     <script type="text/javascript" src="./js/js.cookie.js"></script>
+    <script>
+document.addEventListener('contextmenu', function(event) {
+event.preventDefault();
+    $("#menu").addClass('on');
+
+    openBox();
+
+    //更改设置图标
+    $("#icon-menu").attr("class", "iconfont icon-home");
+});
+</script>
+    
 </body>
 
 </html>
